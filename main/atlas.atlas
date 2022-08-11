@@ -1,13 +1,13 @@
 images {
-  image: "/images/balon.png"
-  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-}
-images {
   image: "/images/rupa.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
   image: "/images/rupa_marker.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/images/balon_back.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 margin: 0
