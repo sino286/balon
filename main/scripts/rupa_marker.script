@@ -38,7 +38,7 @@ function on_input(self, action_id, action)
 		local id = factory.create("/rupa_marker#rupafactory", current_position, rot_quat)
 		msg.post(id, "set_parent", { parent_id = go.get_id("balon")})
 		local input_vector = vmath.rotate(rot_quat, vmath.vector3(0,-1,0))
-		msg.post("/balon", "change_velocity", { input = input_vector })
+		msg.post("/balon", "rupa_puncture", { input = input_vector })
 		
 	end
 end
