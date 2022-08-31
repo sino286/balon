@@ -13,6 +13,7 @@ input_method = HiddenInputField
 
 [project]
 title = Balon
+version = 0.1
 
 [physics]
 use_fixed_timestep = 0
