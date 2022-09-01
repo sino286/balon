@@ -17,4 +17,5 @@ version = 0.1
 
 [physics]
 use_fixed_timestep = 0
+scale = 0.02
 
