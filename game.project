@@ -1,5 +1,5 @@
 [bootstrap]
-main_collection = /main/main.collectionc
+main_collection = /main/loader/loader.collectionc
 
 [script]
 shared_state = 1
@@ -13,9 +13,9 @@ input_method = HiddenInputField
 
 [project]
 title = Balon
-version = 0.1
+version = 0.2
 
 [physics]
 use_fixed_timestep = 0
-scale = 0.02
+scale = 0.01
 

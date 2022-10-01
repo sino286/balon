@@ -3,6 +3,7 @@ function init(self)
 	self.velocity = vmath.vector3()
 	self.input = vmath.vector3()
 	self.rupa_number = 0
+	self.has_air = true
 end
 
 function final(self)
@@ -13,7 +14,7 @@ end
 
 function update(self, dt)
 	-- movement
-	local acceleration = self.input * 10000
+	local acceleration = 10000 * self.input
 
 	local dv = acceleration * dt
 	local v0 = self.velocity
@@ -29,8 +30,10 @@ function update(self, dt)
 	-- scale
 	current_scale = go.get_scale_uniform()
 	if current_scale > 0.2 then
-		local scale = go.get_scale_uniform() - (0.01 * self.rupa_number * dt)
+		local scale = current_scale - (0.01 * self.rupa_number * dt)
 		go.set_scale(scale)
+	else
+		self.has_air = false
 	end
 end
 
